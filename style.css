@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+html{
+    font-family: 'Aladin', cursive;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 25, 25);
+}
+.boards{
+    display: flex;
+    
+}
+.board{
+    background: rgba(2, 14, 31, 0.74);
+    border: 2px solid #1f110111;
+    border-radius: 5px;
+    margin: 0 15px;
+    margin-top: 30px;
+    
+}
+.board h3{
+    padding: 16px;
+    margin: 0;
+    color: #dad7d5;
+    font-size: 26px;
+}
+.dropzone{
+    padding: 16px;
+    background: rgb(240, 152, 152);
+    min-height: 200px;
+    min-width: 280px;
+    border-top: 1px ;
+}
+.card{
+    padding: 16px;
+    box-shadow: 1px 4px 4px  #fff;/*bordas suave*/
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    background: #af5c6ec4;
+    color: white;
+}
+.status{
+    width: 30px;
+    height: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.status.amarelo{
+    
+    background: yellow;
+   
+}
+.status.blue{
+    
+    background: rgb(144, 157, 228);
+    
+}
+.status.verde{
+    
+    background: rgb(144, 228, 158);
+    
+}
+.highlight{
+    background-color: rgb(106, 53, 155);
+}
+
+.card, .dropzone{
+    transition: .4s;
+}
+.is-dragging{
+    cursor: move;
+    opacity: .3;
+}
